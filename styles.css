@@ -213,6 +213,11 @@
     width: 100px;
 }
 
+.cse{
+    width: 98%;
+    display: block;
+}
+
 .botonmidis {
     position: absolute;
     background-color: rgb(255, 255, 255);
