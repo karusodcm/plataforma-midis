@@ -1,0 +1,207 @@
+/* FUENTE */
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --font-one: 'Roboto', 'Rubik', 'sans-serif';
+    --font-two: 'Rubik', 'Roboto', 'sans-serif';
+    --font-three: 'Londrina Solid', 'Roboto', 'sans-serif';
+    --font-four: 'Mochiy Pop One', 'Roboto', 'sans-serif';
+
+    --scroll-bar: 13px;
+
+    --boderc-one: rgb(228, 165, 247);
+    --color-first: rgba(86, 13, 109);
+    --color-white: #fff;
+    --color-black: #000;
+
+    --bg-primary: rgba(249, 242, 231);
+    --bg-secondary: rgba(231, 249, 244);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-one);
+    font-size: 1rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* BODY */
+.bd-body {
+    width: calc(100vw - var(--scroll-bar));
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: radial-gradient(600px at 0 0, var(--bg-primary), var(--bg-secondary));
+    position: relative;
+}
+
+
+.bd-header {
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav_conteiner {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    --icon-toggle-menu: url("./img/menu.png");
+    --transform-menu-show: translate(-100%)
+}
+
+.nav_conteiner:has(.nav_input:checked) {
+    --icon-toggle-menu: url("./img/smenu.png");
+    --transform-menu-show: translate(0%)
+}
+
+.logomidis {
+    height: 40px;
+}
+
+.logo,
+.acceso {
+    z-index: 10;
+}
+
+.nav_input {
+    display: none;
+}
+
+.acceso {
+    width: 30px;
+    height: 30px;
+    background-image: var(--icon-toggle-menu);
+    background-size: cover;
+    transition: background-image .5s;
+}
+
+.nav_input {
+    width: 40px;
+    height: 40px;
+}
+
+.nav_list {
+    transform: var(--transform-menu-show);
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem 5%;
+    background-color: #fff;
+    list-style: none;
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    text-align: center;
+    transition: .5s transform;
+}
+
+.nav_link {
+    color: rgb(47, 47, 47);
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.nav_link:hover {
+    font-size: 1rem;
+}
+
+
+/*body*/
+
+.bd-main {
+    width: 100%;
+}
+
+.accesibilidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    background-color: #676767;
+    height: 50px;
+}
+
+.lengua {
+    background-color: rgb(255, 255, 255);
+    color: #464646;
+    padding: .5rem;
+    margin: .1rem;
+    text-align: center;
+    border-radius: .5rem;
+    text-decoration: none;
+    width: 200px;
+    font-size: .8rem;
+}
+
+.lengua:hover {
+    background-color: rgb(0, 72, 179);
+}
+
+.accs {
+    background-color: #f93e3e;
+    color: #ffffff;
+    padding: .5rem;
+    margin: .1rem;
+    text-align: center;
+    border-radius: .5rem;
+    text-decoration: none;
+    width: 200px;
+    font-size: .8rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #323232;
+    padding: 2rem
+}
+
+.midisall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.contentmidis{
+    background-color: ;
+}
+
+
+
+@media (width > 764px) {
+    .nav_conteiner {
+        --transform-menu-show: translate(0%)
+    }
+
+    .acceso {
+        display: none;
+    }
+
+    .nav_list {
+        position: static;
+        grid-auto-flow: column;
+        place-content: unset;
+        padding: 0;
+
+        transition: unset;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) {}
+
+@media screen and (min-width: 1200px) {}
