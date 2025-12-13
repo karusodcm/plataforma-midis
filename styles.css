@@ -37,16 +37,62 @@
 }
 
 /* BODY */
-.bd-body {
+
+/*HEADER*/
+
+.midis-body {
     width: calc(100vw - var(--scroll-bar));
-    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     background-image: radial-gradient(600px at 0 0, var(--bg-primary), var(--bg-secondary));
     position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
+
+.midis-header{
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+}
+
+.midis-nav{
+    width: 80%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.midis-logo{
+    height: 50px;
+}
+
+.nav-title{
+    text-decoration: none;
+    color:#575757;
+    margin: 0 .5rem;
+}
+
+.nav-title:hover{
+    color:#f01e1e;
+}
+
+/*title*/
+
+.midis-title{
+    background-color: #575757;
+    height: 80px;
+}
+
+.midis-text-principal{
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    padding: 18px 0;
+}
+
 
 
 /* .bd-header {
