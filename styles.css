@@ -39,14 +39,17 @@
 /* BODY */
 .bd-body {
     width: calc(100vw - var(--scroll-bar));
+    min-width: 100vw;
     display: flex;
     flex-flow: column nowrap;
     background-image: radial-gradient(600px at 0 0, var(--bg-primary), var(--bg-secondary));
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
-.bd-header {
+/* .bd-header {
     width: 100%;
     background-color: #fff;
 }
@@ -119,13 +122,18 @@
 }
 
 
-/*body*/
+body
 
 .bd-main {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
 }
 
 .accesibilidad {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +155,7 @@
 }
 
 .lengua:hover {
-    background-color: rgb(0, 72, 179);
+    background-color: rgb(197, 220, 254);
 }
 
 .accs {
@@ -179,7 +187,7 @@
 .contentmidis {
     width: 310px;
     height: 150px;
-    background: linear-gradient(0deg, #024271 20%, #0f74be 20% 80%);
+    background: linear-gradient(0deg, #024271 32%, #0f74be 32% 80%);
     border-radius: .5rem;
     display: flex;
     justify-content: center;
@@ -188,34 +196,44 @@
     margin: .5rem;
 }
 
+.redc {
+    background: linear-gradient(0deg, #710202 32%, #be0f0f 32% 80%);
+}
+
 .boxmidis {
     width: 200px;
     height: 150px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
+    flex-flow: column nowrap;
 }
 
 .lettermidis {
-    padding: 1rem;
+    padding: 1rem 0 0 1rem;
     font-size: 1rem;
     color: #ffffff;
 }
 
-.importletter{
-    font-size: 1.2rem;
+.importletter {
+    font-size: 1.4rem;
     font-weight: 600;
     color: #ffffff;
+    padding: 0 0 0 1rem;
+    margin-top: .3rem;
 }
 
 .imgmidis {
     width: 100px;
 }
 
-.cse{
-    width: 98%;
+.cse {
+    width: 100%;
     display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
 }
 
 .botonmidis {
@@ -229,12 +247,148 @@
     border-radius: .5rem;
     left: 50%;
     transform: translate(-50%);
-    bottom: 7%;
+    bottom: 6%;
+}
+
+.botonmidis:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.section_two {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-flow: row wrap;
+    margin-top: 2rem;
+}
+
+.programas_sociales {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 310px;
+    height: 728px;
+    background-color: #fff;
+}
+
+.ppss_banner {
+    background-color: red;
+    width: 100%;
+    height: 50px;
+}
+
+.ppss_title {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.ppss_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.ppss_logo {
+    width: 100%;
+    height: 50px;
+}
+
+.logoppss {
+    height: 70%;
+    display: block;
+    margin: .5rem auto;
+}
+
+.ppss_textfull {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.ppss_btnsmore {
+    display: block;
+    background-color: rgb(235, 75, 75);
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: .25rem;
+    margin-top: .5rem;
+    font-size: .8rem;
+    text-align: center;
+
 }
 
 
+cse
+
+.cse_option {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 310px;
+    background-color: #008cff;
+}
+
+.cse_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.cse_banner {
+    background-color: rgb(51, 99, 255);
+    width: 100%;
+    height: 50px;
+}
+
+.cse_textfull {
+    text-align: center;
+    font-size: .8rem;
+    color: #fff;
+}
+
+.cse_btnsmore {
+    display: block;
+    background-color: #fff;
+    color: #3d3d3d;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: .25rem;
+    margin-top: .5rem;
+    font-size: .8rem;
+}
+
+.videotuto {
+    background-color: #fff;
+}
+
+.youtube {
+    width: 100%;
+}
+
+.viewmore {
+    background-color: red;
+    color: #fff;
+
+}
+
+.phonenone{
+display: none;
+} */
+
 @media (width > 764px) {
-    .nav_conteiner {
+    /* .nav_conteiner {
         --transform-menu-show: translate(0%)
     }
 
@@ -250,6 +404,61 @@
 
         transition: unset;
     }
+
+    .section_two {
+        width: 90%;
+    }
+
+    .programas_sociales {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-flow: column nowrap;
+        width: 65%;
+        background-color: #fff;
+    }
+
+    .ppss {
+        width: 100%;
+    }
+
+    .ppss_box {
+        width: 100%;
+            height: 80px;
+        justify-content: start;
+    }
+
+    .ppss_logo {
+  width: 20%;
+    }
+
+    .wicien{
+        width:80%;
+    }
+
+
+    .ppss_text{
+        width: 65%;
+    }
+
+    .ppss_textfull {
+        width: 90%;
+        text-align: start;
+        margin-left: 1rem;
+    }
+
+    .ppss_btn{
+        width: 15%;
+    }
+
+    .dnone{
+        display: none;
+    }
+
+    .phonenone{
+display: flex;
+} */
+
 }
 
 
