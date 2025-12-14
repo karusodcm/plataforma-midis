@@ -53,15 +53,15 @@
     background-color: #fff;
     width: 100%;
     height: 80px;
+    display: flex;
+    align-items: end;
 }
 
 .midis-head {
     width: 95%;
-    margin: auto;
-    padding: 15px 0;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-flow: row nowrap;
 }
 
@@ -74,6 +74,7 @@
     color: #505050;
     margin: 0 1rem;
     position: relative;
+    font-size: .8rem;
 }
 
 .bar{
@@ -140,6 +141,81 @@
     color: #fff;
     padding: 18px 0;
 }
+
+/*banner*/
+
+.midis-section{
+    background-color: #fa3434;
+    width: 100%;
+    height: 580px; 
+    overflow: hidden;   
+}
+
+.midis-carrusel{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.midis-all-section{
+    width: calc(100% / 4);
+    height: 100%;
+}
+
+.midis-all-section .imgbanner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+.midis-btn-right, .midis-btn-left{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 1rem;
+    cursor: pointer;
+     box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.midis-btn-right{
+    right: 0;
+}
+
+.midis-btn-left{
+    left: 0;
+}
+
+.midis-btn-right:hover, .midis-btn-left:hover{
+    box-shadow: 0px 0px 8px rgb(245, 18, 18);
+}
+
+.midis-btn-left::before {
+    content: url('/img/lefticon.svg');
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.midis-btn-right::before {
+    content: url('/img/rigthicon.svg');
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 
 
