@@ -49,14 +49,14 @@
     position: relative;
 }
 
-.midis-header{
+.midis-header {
     background-color: #fff;
     width: 100%;
     height: 80px;
 }
 
-.midis-nav{
-    width: 80%;
+.midis-head {
+    width: 95%;
     margin: auto;
     padding: 15px 0;
     display: flex;
@@ -65,28 +65,76 @@
     flex-flow: row nowrap;
 }
 
-.midis-logo{
+.midis-logo {
     height: 50px;
 }
 
-.nav-title{
+.icons-title {
     text-decoration: none;
-    color:#575757;
-    margin: 0 .5rem;
+    color: #505050;
+    margin: 0 1rem;
+    position: relative;
 }
 
-.nav-title:hover{
-    color:#f01e1e;
+.bar{
+    font-weight: 800;
+   margin: 0 0 0 2rem; 
+   color: #000;
 }
+
+.alingico {
+    position: absolute;
+    top:50%;
+    right: -25px;
+    transform: translateY(-50%);
+}
+
+
+/*nav*/
+
+.midis-nav {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: end;
+    padding-right: 2.5%;
+}
+
+.midis-nav-list {
+    text-decoration: none;
+    color: #505050;
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.rp{
+    margin: 0 1rem;
+}
+
+.alingicotwo {
+    position: absolute;
+    top:5%;
+    right: -25px;
+
+}
+
+.bandera {
+    display: block;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #ff0000 25%, #616161 25% 80%);
+}
+
 
 /*title*/
 
-.midis-title{
-    background-color: #575757;
+.midis-title {
+    background-color: #fff;
     height: 80px;
 }
 
-.midis-text-principal{
+.midis-text-principal {
     font-size: 2rem;
     text-align: center;
     color: #fff;
