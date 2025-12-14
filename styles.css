@@ -160,6 +160,50 @@
 .midis-all-section{
     width: calc(100% / 4);
     height: 100%;
+    position: relative;
+}
+
+.midis-banner-title{
+    position: absolute;
+    width: 50%;
+    height: 580px; 
+    top:0;  
+    background: linear-gradient(90deg, #000000ce 60%, rgba(0, 0, 0, 0.349) 90%, transparent 95%);
+}
+
+.contentboxtitle{
+    height: 30%;
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.contentboxsubtitle{
+    height: 40%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    background-color: #000000ce;
+}
+
+.midistitle{
+    color: #fff;
+    font-size: 2rem;
+    text-align: start;
+    position: absolute;
+    bottom: 5%;
+    padding: 1rem;
+    background-color: #000000ce;
+}
+
+.midissubtitle{
+    color: #fff;
+    font-size: 1.3rem;
+      position: absolute;
+    top: 0;
+    padding: 1rem;
 }
 
 .midis-all-section .imgbanner{
