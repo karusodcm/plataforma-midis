@@ -277,14 +277,15 @@
     padding: 2rem 0 0 0;
 }
 
-.midis-content-ppss {
+.midis-content-ppss,
+.midis-content-cse, .midis-content-services {
     margin: 0 auto;
     width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    padding: 1rem;
+    padding: 1rem 0 3rem 0;
 }
 
 .box-ppss {
@@ -293,17 +294,23 @@
     background-color: #fff;
     border-radius: .5rem;
     margin: 1rem;
-    border: 1px solid grey;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
     padding: 1.5rem;
+    transform: scale(1);
+}
+
+.box-ppss:hover {
+    transform: scale(101%);
+    box-shadow: 0px 0px 2px rgb(255, 255, 255);
 }
 
 .subtitle-ppss {
     text-align: center;
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
 }
 
 .content-boxppss {
@@ -325,14 +332,122 @@
 .text-ppss {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-    line-clamp: 3;
-    padding: 1rem 0;
+    line-clamp: 4;
+    padding: 1rem 0 0 0;
+    color: #505050;
 }
 
+.btnmoreinfo {
+    text-decoration: none;
+    background-color: red;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin-top: 1.2rem;
+}
 
+.btnmoreinfo:hover {
+    background-color: rgb(255, 55, 55);
+}
 
+.corregir {
+    margin: .4rem 0;
+    height: 80%;
+}
+
+/*cse*/
+
+.midis-clasificacions {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.title-cse {
+    color: #2e2e2e;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0 0 0;
+}
+
+.card-cse {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(238, 238, 238);
+    border-radius: .5rem;
+    margin: 1rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 1.5rem;
+    transform: scale(1);
+}
+
+.card-cse:hover {
+    transform: scale(101%);
+}
+
+.imgcard-cse {
+    height: 100%;
+}
+
+.imgcse {
+    width: 200px;
+}
+
+.text-cse {
+    text-align: center;
+}
+
+.btnmoreinfocse {
+    text-decoration: none;
+    background-color: #0873bb;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin-top: 1.2rem;
+    transform: scale(1);
+}
+
+.btnmoreinfocse:hover {
+    background-color: #034c7c;
+}
+
+/*services*/
+
+.midis-services{
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.title-services{
+    color: #2e2e2e;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0 0 0;
+}
+
+.card-service{
+    width: 200px;
+    height: 300px;
+    background-color:#0873bb;
+    border-radius: .5rem;
+    margin: 1rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 1.5rem;
+    transform: scale(1);
+
+}
 
 
 
