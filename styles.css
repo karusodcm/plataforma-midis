@@ -117,7 +117,11 @@
     position: absolute;
     top: 5%;
     right: -25px;
+}
 
+.midis-nav-list:hover {
+  font-weight: 500;
+  color: #000;
 }
 
 .bandera {
@@ -128,19 +132,6 @@
 }
 
 
-/*title*/
-
-.midis-title {
-    background-color: #fff;
-    height: 80px;
-}
-
-.midis-text-principal {
-    font-size: 2rem;
-    text-align: center;
-    color: #fff;
-    padding: 18px 0;
-}
 
 /*banner*/
 
@@ -436,7 +427,7 @@
 .card-service{
     width: 200px;
     height: 300px;
-    background-color:#0873bb;
+    background-color:#fff;
     border-radius: .5rem;
     margin: 1rem;
     border: none;
@@ -444,10 +435,67 @@
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    padding: 1.5rem;
     transform: scale(1);
-
+    border: 1px solid #0873bb;
 }
+
+.card-service:hover{
+   box-shadow: 0px 0px 10px rgb(202, 202, 202);
+}
+
+.firstcservice{
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: .5rem .5rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceimg{
+    width: 60%;
+}
+
+.firsttservice{
+    width: 100%;
+    height: 100px;
+    background-color: #3473fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-services{
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.firstbservice{
+    width: 100%;
+    height: 50px;
+    background-color: #3473fa;
+    border-radius: 0 0 .5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.btnmoreinfoss{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000000;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.coloryellow{
+    color: yellow;
+    font-weight: 600;
+}
+
+
 
 
 
