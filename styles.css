@@ -49,6 +49,51 @@
     position: relative;
 }
 
+.accesibilidad {
+    position: fixed;
+    background-color: red;
+    width: 200px;
+    transform: rotate(-90deg);
+    z-index: 100;
+    padding: 1rem;
+    top:30%;
+    left: -4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 .5rem .5rem;
+    border-bottom: 2px solid #fff;
+}
+
+.logoaccess{
+    color: #fff;
+    width: 60px;
+}
+
+.herramienta{
+    color: #fff;
+}
+
+
+.lenguaje{
+    position: fixed;
+    z-index: 100;
+    width: 180px;
+    height: 180px;
+    right: 0;
+    bottom: 10%;
+    border-radius: .25rem;
+}
+
+.videolengua{
+    width: 100%;
+   border-radius: .25rem;
+    mask-image: linear-gradient(transparent 20%, black 20% 70%, transparent 70%)
+}
+
+
+
+
 .midis-header {
     background-color: #fff;
     width: 100%;
@@ -120,8 +165,8 @@
 }
 
 .midis-nav-list:hover {
-  font-weight: 500;
-  color: #000;
+    font-weight: 500;
+    color: #000;
 }
 
 .bandera {
@@ -267,7 +312,9 @@
 }
 
 .midis-content-ppss,
-.midis-content-cse, .midis-content-services {
+.midis-content-cse,
+.midis-content-services,
+.midis-content-adress {
     margin: 0 auto;
     width: 85%;
     display: flex;
@@ -408,24 +455,23 @@
 
 /*services*/
 
-.midis-services{
+.midis-services {
     width: 100%;
-    height: 500px;
     background-color: #ffffff;
     position: relative;
 }
 
-.title-services{
+.title-services {
     color: #2e2e2e;
     font-size: 2rem;
     text-align: center;
     padding: 2rem 0 0 0;
 }
 
-.card-service{
+.card-service {
     width: 200px;
     height: 300px;
-    background-color:#fff;
+    background-color: #0873bb;
     border-radius: .5rem;
     margin: 1rem;
     border: none;
@@ -437,11 +483,11 @@
     border: 1px solid #0873bb;
 }
 
-.card-service:hover{
-   box-shadow: 0px 0px 10px rgb(202, 202, 202);
+.card-service:hover {
+    box-shadow: 0px 0px 10px rgb(202, 202, 202);
 }
 
-.firstcservice{
+.firstcservice {
     width: 100%;
     height: 150px;
     background-color: #ffffff;
@@ -451,36 +497,36 @@
     align-items: center;
 }
 
-.serviceimg{
+.serviceimg {
     width: 60%;
 }
 
-.firsttservice{
+.firsttservice {
     width: 100%;
     height: 100px;
-    background-color: #3473fa;
+    background-color: #0873bb;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.text-services{
+.text-services {
     text-align: center;
     color: #fff;
     padding: 0 1rem;
 }
 
-.firstbservice{
+.firstbservice {
     width: 100%;
     height: 50px;
-    background-color: #3473fa;
+    background-color: #0873bb;
     border-radius: 0 0 .5rem .5rem;
     display: flex;
     justify-content: center;
     align-items: start;
 }
 
-.btnmoreinfoss{
+.btnmoreinfoss {
     text-decoration: none;
     color: #fff;
     background-color: #000000;
@@ -488,10 +534,233 @@
     border-radius: .5rem;
 }
 
-.coloryellow{
+.btnmoreinfoss:hover {
+    background-color: #212121;
+}
+
+
+.coloryellow {
     color: yellow;
     font-weight: 600;
 }
+
+/*adress*/
+
+.midis-adress {
+    width: 100%;
+    background-color: #0873bb;
+    position: relative;
+}
+
+.title-adress {
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0 0 0;
+}
+
+.embed {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.card-adress {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    margin: 1rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    transform: scale(1);
+    border: 1px solid #0873bb;
+}
+
+.alladress {
+    background-color: #000;
+}
+
+.place-title {
+    height: 33px;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+.place-titles {
+    text-align: center;
+}
+
+.place-option {
+    height: 33px;
+    width: 100%;
+    padding: .5rem 0;
+}
+
+.select-input {
+    border: none;
+    width: 80%;
+    border-radius: .3rem;
+    margin: 0 auto;
+    display: block;
+    font-size: .9rem;
+    padding: 0 1rem;
+
+}
+
+.places-comb {
+    height: 43px;
+}
+
+.place-adress {
+    color: #fff;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.place-contents {
+    width: 100%;
+    height: 190px;
+    border-radius: .5rem;
+}
+
+.place-share {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+
+
+
+.card-adress-two {
+    height: 140px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+}
+
+.cblack {
+    color: #000;
+}
+
+.place-mail {
+    height: 53.5;
+}
+
+.mails {
+    display: block;
+    margin: .3rem auto;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.place-suyay {
+    width: 100%;
+    height: 53.5px;
+
+}
+
+.suyayimg {
+    display: block;
+    margin: .7rem auto;
+    height: 70%;
+}
+
+.bold {
+    font-size: .9rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.horarioline {
+    width: 80%;
+    background-color: red;
+    display: block;
+    margin: .3rem auto;
+    font-size: .8rem;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    text-align: center;
+}
+
+
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    background-color: #dadadace;
+}
+
+.footer-nav {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.midis-footer-list {
+    text-decoration: none;
+    color: #000000;
+    font-size: .9rem;
+    margin: .5rem;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.ministra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.shika {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.contenshika {
+    padding: 1rem;
+}
+
+.nameshika {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.namemidis {
+    font-style: italic;
+    font-size: .9rem;
+}
+
+.oac {
+    text-align: center;
+    padding: 1rem 0 3rem;
+}
+
+
+
 
 
 
