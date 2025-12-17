@@ -56,7 +56,7 @@
     transform: rotate(-90deg);
     z-index: 100;
     padding: 1rem;
-    top:30%;
+    top: 30%;
     left: -4%;
     display: flex;
     justify-content: center;
@@ -65,17 +65,17 @@
     border-bottom: 2px solid #fff;
 }
 
-.logoaccess{
+.logoaccess {
     color: #fff;
     width: 60px;
 }
 
-.herramienta{
+.herramienta {
     color: #fff;
 }
 
 
-.lenguaje{
+.lenguaje {
     position: fixed;
     z-index: 100;
     width: 180px;
@@ -85,9 +85,9 @@
     border-radius: .25rem;
 }
 
-.videolengua{
+.videolengua {
     width: 90%;
-   border-radius: .25rem;
+    border-radius: .25rem;
     mask-image: linear-gradient(transparent 20%, black 20% 70%, transparent 70%)
 }
 
@@ -190,6 +190,7 @@
     width: 400%;
     height: 100%;
     display: flex;
+    position: relative;
 }
 
 .midis-all-section {
@@ -759,6 +760,62 @@
     padding: 1rem 0 3rem;
 }
 
+@media (width < 600px) {
+
+    .displaynone {
+        display: none;
+    }
+
+    .midis-banner-title {
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        top: 0%;
+        background: linear-gradient(180deg, #000000ce 60%, transparent 95%);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+
+    .contentboxtitle {
+        position: unset;
+        width: 100%;
+        height: unset;
+        top: 0%;
+        left: 0;
+    }
+
+    .midistitle {
+         position: unset;
+        font-size: 1.5rem;
+       bottom: unset;
+       background-color: unset;
+    }
+
+    .contentboxsubtitle {
+        width: 100%;
+        left: 0%;
+        top: 40%;
+        background-color: unset;
+        position: unset;
+    }
+
+    .midissubtitle {
+         position: unset;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .footer-nav {
+        display: none;
+
+    }
+
+
+
+}
+
 
 
 
@@ -1181,6 +1238,6 @@ display: flex;
 
 
 
-@media screen and (min-width: 1000px) {}
 
-@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1000px) {}
