@@ -23,13 +23,13 @@ function moveToRight() {
         counter = 0;
         operacion = 0;
         carrusel.style.transform = `translate(-${operacion}%)`;
-         carrusel.style.transition = "none";
-         return
+        carrusel.style.transition = "none";
+        return
     }
-        counter++;
-        operacion = operacion + withimgs
-        carrusel.style.transform = `translate(-${operacion}%)`;
-        carrusel.style.transition = "all ease .1s"
+    counter++;
+    operacion = operacion + withimgs
+    carrusel.style.transform = `translate(-${operacion}%)`;
+    carrusel.style.transition = "all ease .1s"
 
 }
 
@@ -41,14 +41,28 @@ function moveToLeft() {
         carrusel.style.transform = `translate(-${operacion}%)`;
         carrusel.style.transition = "none";
         return
-    } 
-        operacion = operacion - withimgs
-        carrusel.style.transform = `translate(-${operacion}%)`;
-        carrusel.style.transition = "all ease .1s"
-}
+    }
+    operacion = operacion - withimgs
+    carrusel.style.transform = `translate(-${operacion}%)`;
+    carrusel.style.transition = "all ease .1s"
+};
+
+
+let hambur = document.getElementById('hambumenus');
+let menunavar = document.querySelector('.list-nav-phone');
+
+
+hambur.addEventListener("click", () => {
+    if (menunavar.style.display === "none") {
+        menunavar.style.display = "flex"
+    } else {
+        menunavar.style.display = "none"
+    }
+});
+
 
 
 const mesapv = document.getElementById('mesadepartes')
-mesapv.addEventListener("click", ()=>{
-    window.open("https://mesapartesvirtual.midis.gob.pe/appmesapartesenlinea/inicio?tid=2*mesadepartes",'_blank')
-})
+mesapv.addEventListener("click", () => {
+    window.open("https://mesapartesvirtual.midis.gob.pe/appmesapartesenlinea/inicio?tid=2*mesadepartes", '_blank')
+});
