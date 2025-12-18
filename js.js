@@ -45,6 +45,10 @@ function moveToLeft() {
         operacion = operacion - withimgs
         carrusel.style.transform = `translate(-${operacion}%)`;
         carrusel.style.transition = "all ease .1s"
-    
-
 }
+
+
+const mesapv = document.getElementById('mesadepartes')
+mesapv.addEventListener("click", ()=>{
+    window.open("https://mesapartesvirtual.midis.gob.pe/appmesapartesenlinea/inicio?tid=2*mesadepartes",'_blank')
+})
