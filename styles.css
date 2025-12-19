@@ -154,12 +154,12 @@
     text-decoration: underline;
 }
 
-.addtogle{
+.addtogle {
     display: flex;
 }
 
 
-.removetogle{
+.removetogle {
     display: none;
 }
 
@@ -635,6 +635,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
+
 }
 
 .text-services {
@@ -893,8 +895,8 @@
     }
 
     .hambumenu {
-    display:flex;
-}
+        display: flex;
+    }
 
     .midis-banner-title {
         position: absolute;
@@ -942,15 +944,31 @@
         top: 80%;
     }
 
+    .box-ppss {
+        height: unset;
+    }
 
-
-
-
+    .text-ppss {
+        -webkit-line-clamp: 2;
+    }
 
     .box-ppss-more {
         display: flex;
-
     }
+
+    .card-service {
+    height: unset;}
+
+    .firsttservice {
+    height: 70px;}
+
+    .firstcservice {
+    height: 100px;}
+
+    .serviceimg {
+    width: unset;
+    height: 70%;
+}
 
     .footer-nav {
         display: none;

@@ -60,6 +60,12 @@ hambur.addEventListener("click", () => {
     }
 });
 
+let btncloseaceso = document.querySelector('.btnclose')
+let accesibilidadbox = document.querySelector('.accesibilidad')
+
+btncloseaceso.addEventListener("click",()=>{
+    accesibilidadbox.style.display = 'none'
+})
 
 
 const mesapv = document.getElementById('mesadepartes')
