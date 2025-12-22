@@ -314,6 +314,8 @@
 .navcse {
     display: none;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
     position: absolute;
     top: 100%;
     left: 0;
@@ -321,8 +323,8 @@
     border: 1px solid #ddd;
     border-radius: .2rem;
     width: 200px;
-    height: 120px;
     z-index: 100;
+    padding: 1rem ;
 }
 
 .navcse a {
@@ -340,6 +342,13 @@
 .midis-nav-list:hover .navcse {
     display: flex;
 }
+
+.lenguaje{
+    margin:0 auto;
+}
+
+
+
 
 
 
@@ -1068,6 +1077,17 @@
         display: none;
 
     }
+
+
+    .content-footer {
+        margin-top: 1rem;
+    width: 90%;
+    transform: scale(.9);
+}
+
+.iconsfinish{
+    transform: scale(.8);
+}
 
 
 
