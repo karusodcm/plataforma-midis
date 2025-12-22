@@ -78,6 +78,7 @@
     width: 20px;
     border-radius: 50%;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .logoaccess {
@@ -198,6 +199,15 @@
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
+    position: relative;
+}
+
+.midis-icons{
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    flex-flow: row nowrap;
+    position: relative;
 }
 
 .midis-logo {
@@ -211,6 +221,40 @@
     position: relative;
     font-size: .8rem;
 }
+
+.selectionlenguaje {
+    width: 100px;
+    height: 70px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    border-radius: .2rem;
+    display: none;
+    z-index: 100;
+    border: 1px solid #ddd;
+}
+
+.idiomasele{
+    color: #505050;
+    text-decoration: none;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: .8rem 0 0 0;
+}
+
+.idiomasele:hover{
+   color: #2356fa;
+   text-decoration: underline;
+}
+
+
+.lenguajes:hover .selectionlenguaje {
+    display: block;
+}
+
 
 .bar {
     font-weight: 800;
@@ -265,6 +309,39 @@
     height: 8px;
     background: linear-gradient(90deg, #ff0000 25%, #616161 25% 80%);
 }
+
+
+.navcse {
+    display: none;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: .2rem;
+    width: 200px;
+    height: 120px;
+    z-index: 100;
+}
+
+.navcse a {
+    color: #505050;
+    text-decoration: none;
+    font-size: .8rem;
+    padding: .8rem 0 0 1rem;
+}
+
+.navcse a:hover {
+    color: #2356fa;
+    text-decoration: underline;
+}
+
+.midis-nav-list:hover .navcse {
+    display: flex;
+}
+
+
 
 /*banner*/
 
@@ -888,6 +965,20 @@
     padding: 1rem 0 3rem;
 }
 
+
+
+@media (width < 1400px) {
+    .reducir {
+        display: none;
+    }
+}
+
+@media (width < 1200px) {
+    .reducircse {
+        display: none;
+    }
+}
+
 @media (width < 600px) {
 
     .displaynone {
@@ -957,18 +1048,21 @@
     }
 
     .card-service {
-    height: unset;}
+        height: unset;
+    }
 
     .firsttservice {
-    height: 70px;}
+        height: 70px;
+    }
 
     .firstcservice {
-    height: 100px;}
+        height: 100px;
+    }
 
     .serviceimg {
-    width: unset;
-    height: 70%;
-}
+        width: unset;
+        height: 70%;
+    }
 
     .footer-nav {
         display: none;
