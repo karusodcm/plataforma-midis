@@ -10,9 +10,9 @@ const sliderselection = document.querySelectorAll(".midis-all-section");
 btnright.addEventListener("click", () => moveToRight())
 btnleft.addEventListener("click", () => moveToLeft())
 
-// setInterval(()=>{
-//     moveToRight()
-// },6000);
+setInterval(()=>{
+ moveToRight()
+ },6000);
 
 let operacion = 0;
 let counter = 0;
